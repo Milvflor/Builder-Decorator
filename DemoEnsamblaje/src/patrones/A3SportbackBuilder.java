@@ -38,7 +38,7 @@ public class A3SportbackBuilder extends VehiculoBuilder{
 
     @Override
     public void ConstruirExtras() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    	System.out.println("Contruyendo Extras");
     }
     
 }
