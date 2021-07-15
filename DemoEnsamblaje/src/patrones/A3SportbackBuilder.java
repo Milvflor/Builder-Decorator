@@ -5,10 +5,40 @@
  */
 package patrones;
 
+import sinpatron.Carroceria;
+import sinpatron.MotorDiesel;
+import sinpatron.Vehiculo;
+
 /**
  *
  * @author Elix
  */
-public class A3SportbackBuilder {
+public class A3SportbackBuilder extends VehiculoBuilder{
+
+   @Override
+    public void DefinirVehiculo() {
+        v= new Vehiculo();
+        v.marca= "Audi";
+        v.modelo="A3 Sportback";
+    }
+
+    @Override
+    public void ConstruirMotor() {
+        v.motor= new MotorDiesel();
+    }
+
+    @Override
+    public void ConstruirHabitaculo() {
+        v.tipoCarroceria= new Carroceria();
+        v.tipoCarroceria.tipoCarroceria="deportivo";
+        v.tipoCarroceria.habitaculoReforzado=true;
+        v.tipoCarroceria.material="fibra de carbono";
+        v.color="plata cromado";
+    }
+
+    @Override
+    public void ConstruirExtras() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
