@@ -5,6 +5,8 @@
  */
 package patrones;
 
+import sinpatron.Vehiculo;
+
 
 /**
  *
@@ -18,8 +20,15 @@ public class VehiculoDirector {
     }
     
     public void ConstruirVehiculo(){
+        builder.DefinirVehiculo();
+        builder.ConstruirMotor();
+        builder.ConstruirHabitaculo();
+        builder.ConstruirExtras();
         
-    
     }
-    
+
+
+    public Vehiculo getVehiculo(){
+        return builder.getVehiculo();
+    }
 }
