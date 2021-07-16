@@ -5,8 +5,6 @@
  */
 package patrones;
 
-import sinpatron.Vehiculo;
-
 /**
  *
  * @author gabrielaramos

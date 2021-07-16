@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sinpatron;
+package patrones;
 
 /**
  *
  * @author david_000
  */
-interface IMotor {
-    String ConsumirCombustible();
-    String InyectarCombustible(int cantidad);
-    String RealizarEscape();
-    String RealizarCombustion();
+public class Carroceria{
+
+    public boolean habitaculoReforzado;
+    public String tipoCarroceria;
+    public String material;
+    
 }

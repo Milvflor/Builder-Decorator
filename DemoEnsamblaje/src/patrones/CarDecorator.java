@@ -1,3 +1,8 @@
+package patrones;
+
+
+import patrones.ICar;
+
 public abstract class CarDecorator implements ICar{
 	protected ICar wrapee;
 

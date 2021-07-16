@@ -1,3 +1,8 @@
+package patrones;
+
+
+import patrones.ICar;
+
 public class SistemaSensoresRetro extends CarDecorator{
 	public 	SistemaSensoresRetro(ICar c){
 		super(c);

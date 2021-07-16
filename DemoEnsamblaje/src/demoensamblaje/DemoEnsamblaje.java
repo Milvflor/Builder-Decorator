@@ -5,7 +5,9 @@
  */
 package demoensamblaje;
 
-import sinpatron.*;
+import patrones.Carroceria;
+import patrones.MotorDiesel;
+import patrones.Vehiculo;
 
 /**
  *

@@ -1,3 +1,7 @@
+
+import patrones.CarDecorator;
+import patrones.ICar;
+
 public class RadioTactil extends CarDecorator{
 	public 	RadioTactil(ICar c){
 		super(c);

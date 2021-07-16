@@ -3,19 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sinpatron;
+package patrones;
+
 
 /**
  *
  * @author david_000
  */
-public class Vehiculo {
+public class Vehiculo implements ICar,IMotor{
    public String color;
    public boolean direccionAsistida;
    public String marca;
    public String modelo;
    public IMotor motor;
    public Carroceria tipoCarroceria;
+
    
    public String getPrestaciones(){
        String n1 = "Prestaciones:\n";
@@ -28,5 +30,31 @@ public class Vehiculo {
        
        return n1;
    }
+
+    @Override
+    public void assemble() {
+        this.assemble();
+        System.out.println("Armando vehículo");
+    }
+
+    @Override
+    public String ConsumirCombustible() {
+        return this.ConsumirCombustible();
+    }
+
+    @Override
+    public String InyectarCombustible(int cantidad) {
+        return this.InyectarCombustible(cantidad);
+    }
+
+    @Override
+    public String RealizarEscape() {
+        return this.RealizarEscape();
+    }
+
+    @Override
+    public String RealizarCombustion() {
+        return this.RealizarCombustion();
+    }
     
 }

@@ -5,10 +5,6 @@
  */
 package patrones;
 
-import sinpatron.Carroceria;
-import sinpatron.MotorDiesel;
-import sinpatron.Vehiculo;
-
 /**
  *
  * @author Elix
